@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuck API</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <span class=""></span>
+      Favourite
+    </div>
+    <div class="main">
+      <div class="main-title">
+        msi 2020
+      </div>
+      <div class="main-getjoke">
+        <div class="main-getjoke__header">
+          Hey!
+          <span>
+            Let’s try to find a joke for you:
+          </span>
+        </div>
+        <div class="main-getjoke__choice">
+          <form id="FormJoke" name="getJoke">
+            <div class="choice random">
+              <label class="label">
+                <input type="radio" value="Random" name="main" class="radio" id="random" checked>
+                <span class="fake"></span>
+                <span class="label-text">Random</span>
+              </label>
+            </div>
+            <div class="choice rub">
+              <label class="label">
+                <input type="radio" value="Categories" name="main" class="radio" id="categories">
+                <span class="fake"></span>
+                <span class="label-text">From categories</span>
+              </label>
+
+              <div class="wrapper__rub">
+
+                <input type="radio" value="animal" name="rub" id="animal" class="radio2" checked>
+                <label for="animal">animal</label>
+
+                <input type="radio" value="career" name="rub" id="career" class="radio2">
+                <label for="career">career</label>
+
+                <input type="radio" value="celebrity" name="rub" id="celebrity" class="radio2">
+                <label for="celebrity">celebrity</label>
+
+                <input type="radio" value="dev" name="rub" id="dev" class="radio2">
+                <label for="dev">dev</label>
+
+              </div>
+
+            </div>
+            <div class="choice search">
+              <label class="label ">
+                <input type="radio" value="Search" name="main" class="radio" id="search">
+                <span class="fake"></span>
+                <span class="label-text">Search</span>
+              </label>
+              <input type="search" name="search1" class="search-input" id="searchs" placeholder="Free text search...">
+            </div>
+            <input id="submit" type="submit" value="Get a joke">
+            <span class="submittext"></span>
+          </form>
+        </div>
+      </div>
+      <div class="main-cards"></div>
+      <div class="main-cardsLoad"></div>
+    </div>
+
+    <div class="wrapper-aside">
+      <div class="aside">
+        <div class="aside-title">Favourite</div>
+        <div class="aside-cards"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
